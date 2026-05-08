@@ -10,9 +10,7 @@ class Cart {
 
     public function __construct($db) {
         $this->conn = $db;
-    }
-
-    // إضافة منتج إلى السلة
+    }ة
     public function addToCart() {
         // التحقق إذا كان المنتج موجود بالفعل في السلة
         $check_query = "SELECT id, quantity FROM " . $this->table_name . " 
