@@ -12,7 +12,7 @@ class Cart {
         $this->conn = $db;
     }ة
     public function addToCart() {
-        // التحقق إذا كان المنتج موجود بالفعل في السلة
+      
         $check_query = "SELECT id, quantity FROM " . $this->table_name . " 
                        WHERE user_id = ? AND product_id = ?";
         $check_stmt = $this->conn->prepare($check_query);
